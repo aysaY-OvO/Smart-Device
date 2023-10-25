@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba($color-modal-overlay, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -80,7 +80,6 @@
     height: 40px;
     padding: 0;
 
-    background: $color-transparent;
     border: none;
     cursor: pointer;
   }

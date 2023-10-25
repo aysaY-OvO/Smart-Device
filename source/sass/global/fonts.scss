@@ -1,8 +1,31 @@
 @font-face {
+  font-display: swap;
+  font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  src: url('../fonts/pt-mono-v13-cyrillic_latin-regular.woff2') format('woff2');
+}
 
+@font-face {
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2') format('woff2');
 }
