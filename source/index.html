@@ -10,22 +10,143 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="header__logo logo" href="#">
+              <svg class="logo__icon" width="55" height="55">
+                <use xlink:href="./img/sprite.svg#logotype"></use>
+              </svg>
+              <div class="logo__text-wrapper">
+                <span class="logo__title">Smart Device</span>
+                <span class="logo__subtitle">умные технологии</span>
+              </div>
+            </a>
+            <div class="header__user-navigation user-navigation">
+              <ul class="user-navigation__list">
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="mailto:info@sd.ru">
+                    <svg width="20" height="20">
+                      <use class="user-navigation__icon focus-visible" xlink:href="./img/sprite.svg#email"></use>
+                    </svg>
+                   <span class="user-navigation__text">info@sd.ru</span>
+                  </a>
+                </li>
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="tel:+74950005252">
+                    <svg width="20" height="20">
+                      <use class="user-navigation__icon focus-visible" xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="user-navigation__text">+7 (495) 000 52 52</span>
+                  </a>
+                </li>
+              </ul>
+              <button class="user-navigation__button btn">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
+
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__social-links footer__block social-links">
+              <a class="footer__logo logo" href="#">
+                <svg class="logo__icon" width="55" height="55">
+                  <use xlink:href="./img/sprite.svg#logotype"></use>
+                </svg>
+                <div class="logo__text-wrapper footer__logo-text">
+                  <span class="logo__title">Smart Device</span>
+                  <span class="logo__subtitle">умные технологии</span>
+                </div>
+              </a>
+              <ul class="social-links__list">
+                <li class="social-links__item">
+                  <a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="./img/sprite.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="./img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="./img/sprite.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion" data-accordion="parent" data-destroy="(max-width: 769px)" data-single>
+              <div class="footer__site-links footer__block site-links accordion__element" data-accordion="element">
+                <button class="footer__button accordion__button btn" data-accordion="button" type="button">
+                  <h3 class="footer__title">Разделы сайта</h3>
+                </button>
+                <div class="accordion__content" data-accordion="content">
+                  <ul class="site-links__list accordion__wrapper">
+                    <li class="site-links__item">
+                      <a href="#">О Компании</a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">Продукты</a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">
+                        Производство печатных <br>
+                        плат
+                      </a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">Монтаж печатных плат</a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">Комплектующие</a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">Доставка</a>
+                    </li>
+                    <li class="site-links__item">
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <address class="footer__contacts footer__block contacts accordion__element" data-accordion="element">
+                <button class="footer__button accordion__button btn" data-accordion="button" type="button">
+                  <h3 class="footer__title">Наш офис</h3>
+                </button>
+                <div class="accordion__content" data-accordion="content">
+                  <ul class="contacts__list accordion__wrapper">
+                    <li class="contacts__item">
+                      <span class="contacts__address">
+                        г. Мытищи, Олимпийский проспект, <br>
+                        д.10
+                      </span>
+                    </li>
+                    <li class="contacts__item">
+                      <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    </li>
+                    <li class="contacts__item">
+                      <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                    </li>
+                    <li class="contacts__item">
+                      <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                    </li>
+                  </ul>
+                </div>
+              </address>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
@@ -35,20 +156,6 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>

@@ -1,0 +1,90 @@
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.user-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 143.5px;
+
+  @include vp-1919 {
+    margin-right: 0;
+    padding-bottom: 11px;
+  }
+}
+
+.user-navigation__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  &:not(:last-of-type) {
+    margin-right: 120px;
+  }
+
+  @include vp-1919 {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.user-navigation__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  fill: $color-default-blue;
+
+  svg {
+    margin-right: 15px;
+  }
+
+  @include hover {
+    color: $color-default-blue;
+  }
+
+  @include vp-1919 {
+    padding: 10px;
+    justify-content: center;
+
+    svg {
+      margin: 0;
+    }
+
+    @include hover-focus {
+      fill: $color-default-white;
+    }
+  }
+}
+
+.user-navigation__text {
+  @include vp-1919 {
+    display: none;
+  }
+}
+
+.user-navigation__button {
+  color: $color-default-white;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  border-radius: 3px;
+  width: 160px;
+  height: 40px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+
+  @include hover {
+    color: $color-default-blue;
+    border: 1px solid $color-default-blue;
+  }
+
+  @include vp-1919 {
+    display: none;
+  }
+}

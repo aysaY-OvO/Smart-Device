@@ -1,14 +1,14 @@
 .btn {
   display: inline-flex;
-  padding: 15px 25px;
   font-family: $ff-roboto-condensed;
   font-size: $fz-default;
   letter-spacing: 0.05em;
   font-weight: 700;
+  font-size: 14px;
 
   color: $color-default-white;
 
-  background-color: $color-blue;
+  background-color: $color-default-blue;
   border: none;
   cursor: pointer;
 

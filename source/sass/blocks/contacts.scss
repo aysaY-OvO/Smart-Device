@@ -1,0 +1,31 @@
+.contacts {
+  font-style: normal;
+  margin-left: 115px;
+  flex-direction: column;
+  position: relative;
+
+  @include vp-1919 {
+    margin-left: 95px;
+  }
+
+  @include vp-769 {
+    margin-left: 0;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  line-height: 18px;
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__address {
+  color: $color-white-opacity;
+}
