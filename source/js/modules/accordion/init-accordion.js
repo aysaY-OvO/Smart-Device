@@ -3,7 +3,7 @@ import {Accordions} from './accordions';
 const accordionParent = document.querySelector('.accordion');
 let accordions;
 
-const breakpoint = window.matchMedia('(max-width: 770px)');
+const breakpoint = window.matchMedia('(max-width: 769px)');
 
 const breakpointChecker = () => {
   if (breakpoint.matches) {
@@ -13,10 +13,9 @@ const breakpointChecker = () => {
   }
 };
 
-breakpoint.addListener(breakpointChecker);
-
 const initAccordions = () => {
   accordions = new Accordions();
+  breakpoint.addListener(breakpointChecker);
   // Используйте в разработке экспортируемую переменную accordions, window сделан для бэкэнда
   window.accordions = accordions;
 };

@@ -47,7 +47,29 @@
         </div>
       </header>
       <main>
-
+        <section class="preview">
+          <div class="container">
+            <div class="preview__wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1920px)"
+                  srcset="img/images/main-bg-desktop.webp 1x, img/images/main-bg-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1919)"
+                  srcset="img/images/main-bg-tablet.webp 1x, img/images/main-bg-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 769px)"
+                  srcset="img/images/main-bg-mobile.webp 1x, img/images/main-bg-mobile@2x.webp 2x">
+                <source media="(max-width: 1919px)" srcset="img/images/main-bg-tablet.jpg 1x, img/images/main-bg-tablet@2x.jpg 2x">
+                <source media="(max-width: 769px)" srcset="img/images/main-bg-mobile.jpg 1x, img/images/main-bg-mobile@2x.jpg 2x">
+                <img class="preview__image" src="img/images/main-bg-desktop.jpg" srcset="img/images/main-bg-desktop@2x.jpg 2x" alt="Печатные платы">
+              </picture>
+              <div class="preview__content">
+                <h1 class="preview__title title">Печатные платы</h1>
+                <span class="preview__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</span>
+                <button class="preview__button btn" type="button">Получить бесплатную консультацию</button>
+                <button class="preview__button preview__button--mobile-width-only btn" type="button">бесплатная консультация</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">

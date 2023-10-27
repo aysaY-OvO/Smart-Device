@@ -1,9 +1,11 @@
 .header__wrapper {
-  background: linear-gradient($color-default-dark 90%, transparent);
+  position: relative;
+  background: linear-gradient($color-default-dark 85%, transparent);
   padding: 30px 350px 35px 350px;
   display: flex;
   flex-wrap: wrap;
   height: 120px;
+  z-index: 100;
 
   a {
     color: $color-default-white;
