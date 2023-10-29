@@ -34,6 +34,10 @@
   clip-path: inset(100%);
 }
 
+.is-hidden {
+  display: none;
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }

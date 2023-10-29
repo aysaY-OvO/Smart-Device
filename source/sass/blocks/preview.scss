@@ -2,15 +2,15 @@
   background-color: $color-default-dark;
   height: 100%;
   position: relative;
-  height: 880px;
+  height: 830px;
   box-shadow: 0px -30px 4px 0px rgba(4, 24, 39);
 
 	@include vp-1919 {
-		height: 640px;
+		height: 600px;
 	}
 
   @include vp-769 {
-    height: 560px;
+    height: 520px;
   }
 }
 

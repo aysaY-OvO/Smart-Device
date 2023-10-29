@@ -1,14 +1,48 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initAccordions} from './modules/accordion/init-accordion';
+import {initAccordions, accordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
+const accordionParent = document.querySelector('.accordion');
+const aboutBlock = document.querySelector('.about');
+const aboutHiddenText = aboutBlock.querySelectorAll('.is-hidden');
+const aboutButton = aboutBlock.querySelector('.about__button');
+const mobileWidthOnlyHidden = aboutBlock.querySelector('.mobile-width-hidden');
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+  const tabletBreakpoint = window.matchMedia('(max-width: 769px)');
+
+  const accordionsBreakpointChecker = () => {
+    if (tabletBreakpoint.matches) {
+      accordions.closeAllAccordion(accordionParent);
+    } else {
+      accordions.fullUpdate();
+    }
+  };
+
+  const showTabletText = () => {
+    if (tabletBreakpoint.matches) {
+      mobileWidthOnlyHidden.classList.add('mobile-width-hidden');
+    } else {
+      mobileWidthOnlyHidden.classList.remove('mobile-width-hidden');
+    }
+  };
+
+  const showText = (btn, content) => {
+    btn.addEventListener('click', () => {
+      if (content.classList.contains('is-hidden')) {
+        content.classList.remove('is-hidden');
+        btn.textContent = 'Свернуть';
+      } else {
+        content.classList.add('is-hidden');
+        btn.textContent = 'Подробнее';
+      }
+    });
+  };
 
   iosVhFix();
 
@@ -18,6 +52,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    tabletBreakpoint.addListener(accordionsBreakpointChecker);
+    tabletBreakpoint.addListener(showTabletText);
+    aboutHiddenText.forEach((text) => {
+      showText(aboutButton, text);
+    });
     initModals();
     const form = new Form();
     window.form = form;

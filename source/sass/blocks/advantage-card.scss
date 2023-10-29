@@ -1,0 +1,78 @@
+.advantages__item {
+  width: 595px;
+  height: 300px;
+  border: 1px solid $color-advantages-border;
+  box-shadow: 5px 0px 0px 0px $color-default-blue inset;
+  padding-top: 40px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+
+  @include hover {
+    background-color: $color-default-blue;
+    color: $color-default-white;
+
+    .advantages__icon {
+      fill: $color-default-white;
+    }
+
+    .advantages__title {
+      color: $color-default-white;
+    }
+  }
+
+  @include vp-1919 {
+    width: 320px;
+    height: 360px;
+    padding-right: 30px;
+    padding-left: 45px;
+    padding-top: 30px;
+
+    @include hover-focus {
+      background-color: $color-default-blue;
+      color: $color-default-white;
+
+      .advantages__icon {
+        fill: $color-default-white;
+      }
+
+      .advantages__title {
+        color: $color-default-white;
+      }
+    }
+  }
+
+  @include vp-769 {
+    width: 270px;
+    min-height: 325px;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+    font-size: 14px;
+  }
+}
+
+.advantages__icon {
+  fill: $color-default-blue;
+  margin-bottom: 20px;
+}
+
+.advantages__title {
+  margin: 0;
+  color: $color-default-blue;
+  font-family: $ff-roboto-condensed;
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-bottom: 15px;
+
+  @include vp-769 {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+}
