@@ -1,0 +1,36 @@
+.products__wrapper {
+  background-color: $color-default-dark;
+  color: $color-additional-white;
+  padding-top: 70px;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-bottom: 140px;
+
+  @include vp-1919 {
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-769 {
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 86px;
+  }
+}
+
+.products__title {
+  margin-bottom: 50px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 85px;
+
+  @include vp-1919 {
+    display: block;
+  }
+}

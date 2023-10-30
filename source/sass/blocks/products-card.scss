@@ -1,0 +1,50 @@
+.products__item {
+  position: relative;
+
+  @include hover {
+    opacity: 0.7;
+  }
+
+  @include vp-1919 {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+.products__item-title {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+  color: $color-additional-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  position: absolute;
+
+  @include vp-769 {
+    font-size: 18px;
+  }
+}
+
+.products__button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px 0 0 0;
+  bottom: 0;
+  right: 0;
+
+  @include vp-769 {
+    width: 40px;
+    height: 40px;
+  }
+}

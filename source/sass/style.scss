@@ -18,10 +18,9 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
+@import "blocks/btn.scss";
+@import "blocks/custom-input.scss";
+@import "blocks/custom-toggle.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/user-navigation.scss";
@@ -37,6 +36,11 @@
 @import "blocks/advantage-card.scss";
 @import "blocks/advantages.scss";
 @import "blocks/about.scss";
+@import "blocks/products.scss";
+@import "blocks/products-card.scss";
+@import "blocks/feedback.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/modal.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

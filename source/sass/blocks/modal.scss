@@ -39,10 +39,6 @@
     width: 100%;
     min-height: 100%;
     padding: 60px 40px;
-
-    @include vp-769 {
-      padding: 60px 16px;
-    }
   }
 
   &__overlay {
@@ -56,21 +52,9 @@
     cursor: pointer;
   }
 
-  &__content {
-    position: relative;
-
-    width: 600px;
-    padding: 40px;
-
-    background-color: $color-default-white;
-
-    @include vp-769 {
-      width: 100%;
-      padding: 20px;
-    }
-  }
-
   &__close-btn {
+    background-color: $color-default-blue;
+    fill: $color-default-white;
     position: absolute;
     top: 22px;
     right: 22px;
@@ -82,26 +66,10 @@
 
     border: none;
     cursor: pointer;
-  }
 
-  &--responsive {
-    .modal__content {
-      width: 100%;
+    @include hover {
+      opacity: 0.5;
     }
-  }
-
-  &--fit-content {
-    .modal__content {
-      width: auto;
-
-      @include vp-769 {
-        width: 100%;
-      }
-    }
-  }
-
-  &--no-scale {
-    transform: none;
   }
 
   &--preload {
@@ -115,4 +83,105 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: none;
+  background-color: $color-default-blue;
+
+  width: 500px;
+  padding: 40px;
+
+  @include vp-769 {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.modal__form fieldset {
+  width: 100%;
+}
+
+.modal__form input,
+.modal__form textarea {
+  background-color: rgba($color: #041427, $alpha: 0.15);
+  border: none;
+  border-radius: 3px;
+  color: $color-default-dark;
+}
+
+.modal__form input[name="имя"],
+.modal__form input[name="телефон"],
+.modal__form textarea {
+  width: 100%;
+}
+
+.modal__form input[name="имя"] {
+  margin-right: 0;
+}
+
+.modal__form .phone-mask {
+  width: 100%;
+}
+
+.modal__form .feedback__submit-button {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 35px;
+}
+
+.modal__checkbox {
+  width: 100%;
+}
+.modal__checkbox {
+  position: relative;
+}
+
+.modal__checkbox input {
+  top: 80%;
+  left: 2.1%;
+}
+
+.modal__checkbox label {
+  color: $color-additional-white;
+  font-size: 14px;
+  display: block;
+  padding-left: 26px;
+  cursor: pointer;
+
+  @include hover {
+    color: $color-form-submit-button;
+  }
+}
+
+.modal__checkbox label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px $color-additional-white inset;
+  left: 0;
+  top: 10%;
+}
+
+.modal__checkbox label:hover::after {
+  box-shadow: 0 0 0 1px $color-form-submit-button inset;
+}
+
+.modal__checkbox input:checked + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite/checked.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  bottom: 28%;
+  left: 0.7%;
 }

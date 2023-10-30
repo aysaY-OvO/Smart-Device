@@ -1,3 +1,33 @@
-.feedback {
-  background-image: linear-gradient(to bottom right, rgba(4, 24, 39, 50%) 30%, $color-blue 30% 100%);
+.feedback__wrapper {
+  background: linear-gradient(153deg, $color-default-dark-opacity 30%, $color-default-blue 30% 100%);
+  background-color: $color-default-blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 115px;
+  padding-top: 170px;
+  padding-right: 350px;
+  padding-left: 350px;
+  padding-bottom: 250px;
+
+  @include vp-1919 {
+    background: none;
+    background-color: $color-default-blue;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 125px;
+    display: block;
+  }
+
+  @include vp-769 {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 90px;
+  }
+}
+
+@include vp-1919 {
+  .feedback__wrapper img {
+    display: none;
+  }
 }
