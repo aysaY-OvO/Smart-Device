@@ -31,6 +31,8 @@
   }
 
   @include vp-769 {
+    max-width: 270px;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }

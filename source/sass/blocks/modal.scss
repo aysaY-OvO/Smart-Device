@@ -103,33 +103,33 @@
   }
 }
 
-.modal__form fieldset {
+.modal__fieldset {
   width: 100%;
 }
 
-.modal__form input,
-.modal__form textarea {
+.modal__fieldset input,
+.modal__fieldset textarea {
   background-color: rgba($color: #041427, $alpha: 0.15);
   border: none;
   border-radius: 3px;
   color: $color-default-dark;
 }
 
-.modal__form input[name="имя"],
-.modal__form input[name="телефон"],
-.modal__form textarea {
+.modal__fieldset input[name="имя"],
+.modal__fieldset input[name="телефон"],
+.modal__fieldset textarea {
   width: 100%;
 }
 
-.modal__form input[name="имя"] {
+.modal__fieldset input[name="имя"] {
   margin-right: 0;
 }
 
-.modal__form .phone-mask {
+.modal__fieldset .phone-mask {
   width: 100%;
 }
 
-.modal__form .feedback__submit-button {
+.modal__fieldset .feedback__submit-button {
   width: 100%;
   margin-right: 0;
   margin-bottom: 35px;

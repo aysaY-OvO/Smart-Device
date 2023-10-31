@@ -13,17 +13,13 @@
   margin-left: 150px;
   justify-self: center;
   padding-left: 20px;
-  max-width: 500px;
+  width: 479px;
 
   @include vp-1919 {
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 11px;
     width: auto;
-  }
-
-  @include vp-769 {
-
   }
 }
 
