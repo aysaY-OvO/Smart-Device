@@ -136,10 +136,9 @@
 }
 
 .modal__checkbox {
-  width: 100%;
-}
-.modal__checkbox {
   position: relative;
+  width: 395px;
+  margin: 0 auto;
 }
 
 .modal__checkbox input {
@@ -184,4 +183,10 @@
   left: 0;
   bottom: 28%;
   left: 0.7%;
+}
+
+.modal__form-submit .feedback__submit-button {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
