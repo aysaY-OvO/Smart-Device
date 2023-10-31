@@ -1,12 +1,11 @@
 .advantages__wrapper {
   margin-top: 120px;
   margin-bottom: 120px;
-  max-width: 1222px;
+  width: 100%;
   padding-left: 350px;
   padding-right: 350px;
 
   @include vp-1919 {
-    max-width: 670px;
     margin-top: 80px;
     margin-bottom: 80px;
     padding-left: 50px;
@@ -14,17 +13,22 @@
   }
 
   @include vp-769 {
-    max-width: none;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 50px;
   }
 }
 
 .advantages__list {
+  max-width: 1222px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  margin: 0 auto;
 
+  @include vp-1919 {
+    max-width: 670px;
+  }
 
   @include vp-769 {
     grid-template-columns: 1fr;

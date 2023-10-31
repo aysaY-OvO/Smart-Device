@@ -4,8 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   padding: 50px 350px 55px 350px;
-  max-height: 280px;
+  margin: 0 auto;
+  min-height: 280px;
   box-sizing: border-box;
+  justify-content: center;
 
   a {
     color: $color-white-opacity;

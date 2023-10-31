@@ -38,9 +38,11 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       if (content.classList.contains('is-hidden')) {
         content.classList.remove('is-hidden');
+        mobileWidthOnlyHidden.classList.remove('mobile-width-hidden');
         btn.textContent = 'Свернуть';
       } else {
         content.classList.add('is-hidden');
+        mobileWidthOnlyHidden.classList.add('mobile-width-hidden');
         btn.textContent = 'Подробнее';
       }
     });
@@ -62,9 +64,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
-    tabletBreakpoint.addListener(accordionsBreakpointChecker);
     tabletBreakpoint.addListener(showTabletText);
+    tabletBreakpoint.addListener(accordionsBreakpointChecker);
     tabletBreakpoint.addListener(changeProductsTitle);
     initPhoneMask();
     aboutHiddenText.forEach((text) => {
@@ -73,6 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initModals();
     initAccordions();
   });
 });
