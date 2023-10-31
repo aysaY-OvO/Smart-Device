@@ -930,7 +930,7 @@ button,
   -ms-grid-column-align: center;
       justify-self: center;
   padding-left: 20px;
-  max-width: 500px;
+  width: 479px;
 }
 @media (max-width: 1919px) {
   .user-navigation__list {
@@ -940,6 +940,7 @@ button,
     width: auto;
   }
 }
+
 .user-navigation__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1298,7 +1299,7 @@ button,
 
 .preview__wrapper {
   background-color: #041827;
-  background-image: url("../../img/images/main-bg-desktop.jpg");
+  background-image: url("../img/images/main-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -1312,31 +1313,31 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .preview__wrapper {
-    background-image: url("../../img/images/main-bg-desktop@2x.jpg");
+    background-image: url("../img/images/main-bg-desktop@2x.jpg");
   }
 }
 @media (max-width: 1919px) {
   .preview__wrapper {
     height: 600px;
     padding-left: 50px;
-    background-image: url("../../img/images/main-bg-tablet.jpg");
+    background-image: url("../img/images/main-bg-tablet.jpg");
   }
 }
 @media (max-width: 1919px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1919px) and (min-resolution: 144dpi), (max-width: 1919px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1919px) and (min-resolution: 2dppx) {
   .preview__wrapper {
-    background-image: url("../../img/images/main-bg-tablet@2x.jpg");
+    background-image: url("../img/images/main-bg-tablet@2x.jpg");
   }
 }
 @media (max-width: 769px) {
   .preview__wrapper {
     height: 520px;
     padding-left: 25px;
-    background-image: url("../../img/images/main-bg-mobile.jpg");
+    background-image: url("../img/images/main-bg-mobile.jpg");
   }
 }
 @media (max-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 769px) and (min-resolution: 144dpi), (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 769px) and (min-resolution: 2dppx) {
   .preview__wrapper {
-    background-image: url("../../img/images/main-bg-mobile@2x.jpg");
+    background-image: url("../img/images/main-bg-mobile@2x.jpg");
   }
 }
 
@@ -1699,8 +1700,10 @@ button,
 }
 @media (max-width: 769px) {
   .advantages__list {
+    max-width: 270px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -2003,7 +2006,7 @@ button,
   }
 }
 
-.feedback__form fieldset {
+.feedback__fieldset {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2014,13 +2017,13 @@ button,
   padding: 0;
 }
 @media (max-width: 1919px) {
-  .feedback__form fieldset {
+  .feedback__fieldset {
     width: 670px;
     margin: 0 auto;
   }
 }
 @media (max-width: 769px) {
-  .feedback__form fieldset {
+  .feedback__fieldset {
     width: 270px;
   }
 }
@@ -2063,26 +2066,26 @@ button,
   }
 }
 
-.feedback__form input,
-.feedback__form textarea {
+.feedback__fieldset input,
+.feedback__fieldset textarea {
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
   color: #041827;
 }
 
-.feedback__form input::-moz-placeholder,
-.feedback__form textarea::-moz-placeholder {
+.feedback__fieldset input::-moz-placeholder,
+.feedback__fieldset textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-.feedback__form input::-webkit-input-placeholder,
-.feedback__form textarea::-webkit-input-placeholder {
+.feedback__fieldset input::-webkit-input-placeholder,
+.feedback__fieldset textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.feedback__form input[name=имя],
-.feedback__form input[name=телефон] {
+.feedback__fieldset input[name=имя],
+.feedback__fieldset input[name=телефон] {
   width: 275px;
   height: 50px;
   margin-bottom: 20px;
@@ -2091,28 +2094,28 @@ button,
   padding: 15px 15px;
 }
 @media (max-width: 1919px) {
-  .feedback__form input[name=имя],
-.feedback__form input[name=телефон] {
+  .feedback__fieldset input[name=имя],
+.feedback__fieldset input[name=телефон] {
     width: 320px;
   }
 }
 @media (max-width: 769px) {
-  .feedback__form input[name=имя],
-.feedback__form input[name=телефон] {
+  .feedback__fieldset input[name=имя],
+.feedback__fieldset input[name=телефон] {
     width: 270px;
   }
 }
 
-.feedback__form input[name=имя] {
+.feedback__fieldset input[name=имя] {
   margin-right: 30px;
 }
 @media (max-width: 769px) {
-  .feedback__form input[name=имя] {
+  .feedback__fieldset input[name=имя] {
     margin-right: 0;
   }
 }
 
-.feedback__form textarea {
+.feedback__fieldset textarea {
   width: 580px;
   height: 155px;
   -webkit-box-sizing: border-box;
@@ -2120,12 +2123,12 @@ button,
   padding: 25px 15px;
 }
 @media (max-width: 1919px) {
-  .feedback__form textarea {
+  .feedback__fieldset textarea {
     width: 670px;
   }
 }
 @media (max-width: 769px) {
-  .feedback__form textarea {
+  .feedback__fieldset textarea {
     width: 270px;
     height: 180px;
   }
@@ -2360,33 +2363,33 @@ button,
   }
 }
 
-.modal__form fieldset {
+.modal__fieldset {
   width: 100%;
 }
 
-.modal__form input,
-.modal__form textarea {
+.modal__fieldset input,
+.modal__fieldset textarea {
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
   color: #041827;
 }
 
-.modal__form input[name=имя],
-.modal__form input[name=телефон],
-.modal__form textarea {
+.modal__fieldset input[name=имя],
+.modal__fieldset input[name=телефон],
+.modal__fieldset textarea {
   width: 100%;
 }
 
-.modal__form input[name=имя] {
+.modal__fieldset input[name=имя] {
   margin-right: 0;
 }
 
-.modal__form .phone-mask {
+.modal__fieldset .phone-mask {
   width: 100%;
 }
 
-.modal__form .feedback__submit-button {
+.modal__fieldset .feedback__submit-button {
   width: 100%;
   margin-right: 0;
   margin-bottom: 35px;
