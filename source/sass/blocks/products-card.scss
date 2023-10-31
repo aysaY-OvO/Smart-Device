@@ -27,8 +27,15 @@
   font-weight: 400;
   position: absolute;
 
+  @include vp-1919 {
+    margin-top: 25px;
+    margin-left: 45px;
+  }
+
   @include vp-769 {
     font-size: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 

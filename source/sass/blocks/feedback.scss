@@ -1,8 +1,9 @@
 .feedback__wrapper {
-  background: linear-gradient(153deg, $color-default-dark-opacity 30%, $color-default-blue 30% 100%);
+  background: linear-gradient(139deg, $color-default-dark-opacity 34%, $color-default-blue 34% 100%);
   background-color: $color-default-blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: start;
   column-gap: 115px;
   padding-top: 170px;
   padding-right: 350px;
@@ -26,8 +27,11 @@
   }
 }
 
-@include vp-1919 {
-  .feedback__wrapper img {
+.feedback__wrapper picture {
+  justify-self: end;
+  padding-top: 70px;
+
+  @include vp-1919 {
     display: none;
   }
 }

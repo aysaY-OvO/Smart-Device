@@ -22,15 +22,33 @@
 }
 
 .products__title {
+  display: block;
+  width: 1220px;
+  margin: 0 auto;
   margin-bottom: 50px;
+
+  @include vp-1919 {
+    width: 670px;
+  }
+
+  @include vp-769 {
+    width: 270px;
+  }
 }
 
 .products__list {
+  width: 1220px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 85px;
+  gap: 85px;
 
   @include vp-1919 {
     display: block;
+    width: 670px;
+  }
+
+  @include vp-769 {
+    width: 270px;
   }
 }

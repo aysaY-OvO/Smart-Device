@@ -1,17 +1,20 @@
 .about__wrapper {
-  padding-left: 600px;
-  padding-right: 350px;
+  width: 1220px;
+  margin: 0 auto;
+  padding-left: 250px;
   margin-bottom: 100px;
   position: relative;
 
   @include vp-1919 {
+    width: 674px;
     padding-left: 225px;
-    padding-right: 50px;
     margin-bottom: 80px;
     margin-top: 80px;
   }
 
   @include vp-769 {
+    width: 270px;
+    margin: 0;
     padding-right: 25px;
     padding-left: 25px;
     margin-top: 50px;
@@ -21,7 +24,7 @@
 
 .about__image {
   position: absolute;
-  left: 350px;
+  left: 0;
 
   @include vp-1919 {
     left: 46px;
@@ -31,6 +34,11 @@
 .about__title {
   margin: 0;
   margin-bottom: 15px;
+
+  @include vp-769 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
 }
 
 .about__text {
@@ -41,6 +49,10 @@
   }
 
   @include vp-769 {
+    font-size: 14px;
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
     .mobile-width-hidden {
       display: none;
     }
@@ -48,6 +60,7 @@
 }
 
 .about__button {
+  margin-top: 42px;
   width: 180px;
   height: 45px;
   border: 1px solid $color-default-blue;
@@ -68,6 +81,14 @@
   @include hover-focus {
     background-color: $color-default-blue;
     color: $color-default-white;
+  }
+
+  @include vp-1919 {
+    margin-top: 20px;
+  }
+
+  @include vp-769 {
+    width: 160px;
   }
 }
 

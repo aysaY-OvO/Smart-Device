@@ -3,9 +3,9 @@
   background: linear-gradient($color-default-dark 85%, transparent);
   padding: 30px 350px 35px 350px;
   display: flex;
-  flex-wrap: wrap;
   height: 120px;
-  width: 1920px;
+  width: 100%;
+  justify-content: center;
   z-index: 100;
 
   a {
@@ -17,18 +17,12 @@
     padding: 20px 70px 40px 50px;
     justify-content: space-between;
     height: 100px;
-    width: 770px;
   }
 
   @include vp-769 {
     padding: 10px 35px 20px 25px;
     height: 70px;
-    width: 320px;
   }
-}
-
-.header__logo {
-  margin-right: 160px;
 }
 
 .sitemap-header {

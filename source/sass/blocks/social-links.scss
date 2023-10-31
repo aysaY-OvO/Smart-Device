@@ -4,13 +4,16 @@
   flex-direction: column;
 
   @include vp-1919 {
-    max-width: none;
-    min-width: 100%;
+    min-width: 770px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 0;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @include vp-769 {
+    min-width: 100%;
     flex-direction: column;
   }
 }
