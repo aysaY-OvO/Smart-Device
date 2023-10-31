@@ -1965,7 +1965,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  justify-items: start;
   -webkit-column-gap: 115px;
      -moz-column-gap: 115px;
           column-gap: 115px;
