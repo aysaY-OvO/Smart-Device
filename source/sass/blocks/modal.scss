@@ -88,12 +88,10 @@
 .modal__content {
   position: relative;
   display: flex;
-  padding: 0;
   flex-direction: column;
   flex-wrap: wrap;
   background: none;
   background-color: $color-default-blue;
-
   width: 500px;
   padding: 40px;
 
@@ -103,33 +101,33 @@
   }
 }
 
-.modal__fieldset {
+.modal__form {
   width: 100%;
 }
 
-.modal__fieldset input,
-.modal__fieldset textarea {
+.modal__form input,
+.modal__form textarea {
   background-color: rgba($color: #041427, $alpha: 0.15);
   border: none;
   border-radius: 3px;
   color: $color-default-dark;
 }
 
-.modal__fieldset input[name="имя"],
-.modal__fieldset input[name="телефон"],
-.modal__fieldset textarea {
+.modal__form input[name="name"],
+.modal__form input[name="phone"],
+.modal__form textarea {
   width: 100%;
 }
 
-.modal__fieldset input[name="имя"] {
+.modal__form input[name="name"] {
   margin-right: 0;
 }
 
-.modal__fieldset .phone-mask {
+.modal__form .phone-mask {
   width: 100%;
 }
 
-.modal__fieldset .feedback__submit-button {
+.modal__form .feedback__submit-button {
   width: 100%;
   margin-right: 0;
   margin-bottom: 35px;
@@ -176,16 +174,15 @@
 .modal__checkbox input:checked + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/sprite/checked.svg);
+  background-image: url("../img/sprite/checked.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
-  left: 0;
   bottom: 28%;
   left: 0.7%;
 }
 
-.modal__form-submit .feedback__submit-button {
+.modal__form-submit .form-submit__button {
   width: 100%;
   margin-right: 0;
   margin-bottom: 20px;

@@ -1,37 +1,36 @@
 .preview__wrapper {
   background-color: $color-default-dark;
-  background-image: url('../img/images/main-bg-desktop.jpg');
+  background-image: url("../img/images/main-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  height: 100%;
   position: relative;
   height: 830px;
-  box-shadow: 0px -30px 4px 0px rgba(4, 24, 39);
+  box-shadow: 0 -30px 4px 0 rgba(4, 24, 39);
   z-index: 50;
   padding-right: 250px;
 
   @include retina {
-    background-image: url('../img/images/main-bg-desktop@2x.jpg');
+    background-image: url("../img/images/main-bg-desktop@2x.jpg");
   }
 
-	@include vp-1919 {
-		height: 600px;
+  @include vp-1919 {
+    height: 600px;
     padding-left: 50px;
-    background-image: url('../img/images/main-bg-tablet.jpg');
+    background-image: url("../img/images/main-bg-tablet.jpg");
 
     @include retina {
-      background-image: url('../img/images/main-bg-tablet@2x.jpg');
+      background-image: url("../img/images/main-bg-tablet@2x.jpg");
     }
-	}
+  }
 
   @include vp-769 {
     height: 520px;
     padding-left: 25px;
-    background-image: url('../img/images/main-bg-mobile.jpg');
+    background-image: url("../img/images/main-bg-mobile.jpg");
 
     @include retina {
-      background-image: url('../img/images/main-bg-mobile@2x.jpg');
+      background-image: url("../img/images/main-bg-mobile@2x.jpg");
     }
   }
 }
@@ -45,10 +44,10 @@
   margin: 0 auto;
   padding-top: 340px;
 
-	@include vp-1919 {
-		width: 600px;
-		padding-top: 80px;
-	}
+  @include vp-1919 {
+    width: 600px;
+    padding-top: 80px;
+  }
 
   @include vp-769 {
     width: 270px;
@@ -63,9 +62,9 @@
   font-weight: 700;
   margin-bottom: 40px;
 
-	@include vp-1919 {
-		font-size: 64px;
-	}
+  @include vp-1919 {
+    font-size: 64px;
+  }
 
   @include vp-769 {
     font-size: 36px;
@@ -85,10 +84,6 @@
 }
 
 .preview__button {
-  &--mobile-width-only {
-    display: none;
-  }
-
   width: 410px;
   height: 55px;
   border-radius: 3px;
@@ -103,13 +98,8 @@
   align-items: center;
 
   @include vp-769 {
-    display: none;
-
-    &--mobile-width-only {
-      display: flex;
-      width: 270px;
-      height: 40px;
-      font-size: 14px;
-    }
+    width: 270px;
+    height: 40px;
+    font-size: 14px;
   }
 }

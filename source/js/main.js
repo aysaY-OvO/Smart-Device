@@ -5,18 +5,27 @@ import {initAccordions, accordions} from './modules/accordion/init-accordion';
 import {initPhoneMask} from './utils/phone-mask';
 
 // ---------------------------------
+const previewButton = document.querySelector('[data-button="preview-button"]');
 const accordionParent = document.querySelector('.accordion');
 const aboutBlock = document.querySelector('.about');
 const aboutHiddenText = aboutBlock.querySelectorAll('.is-hidden');
 const aboutButton = aboutBlock.querySelector('.about__button');
 const mobileWidthOnlyHidden = aboutBlock.querySelector('.mobile-width-hidden');
-const productsTitle = document.querySelector('.products__title');
+const productsTitle = document.querySelector('[data-title="products-title"]');
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
   const tabletBreakpoint = window.matchMedia('(max-width: 769px)');
+
+  const onChangePreviewButton = () => {
+    if (tabletBreakpoint.matches) {
+      previewButton.textContent = 'бесплатная консультация';
+    } else {
+      previewButton.textContent = 'Получить бесплатную консультацию';
+    }
+  };
 
   const accordionsBreakpointChecker = () => {
     if (tabletBreakpoint.matches) {
@@ -48,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  const changeProductsTitle = () => {
+  const onChangeProductsTitle = () => {
     if (tabletBreakpoint.matches) {
       productsTitle.textContent = 'Товары и услуги Smart Device';
     } else {
@@ -66,7 +75,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     tabletBreakpoint.addListener(showTabletText);
     tabletBreakpoint.addListener(accordionsBreakpointChecker);
-    tabletBreakpoint.addListener(changeProductsTitle);
+    tabletBreakpoint.addListener(onChangeProductsTitle);
+    tabletBreakpoint.addListener(onChangePreviewButton);
     initPhoneMask();
     aboutHiddenText.forEach((text) => {
       showText(aboutButton, text);

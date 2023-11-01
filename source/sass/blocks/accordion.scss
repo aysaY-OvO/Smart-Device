@@ -37,13 +37,12 @@
   &__button {
     cursor: default;
     box-sizing: border-box;
+
     @include vp-769 {
       width: 100%;
       padding-top: 20px;
       padding-bottom: 20px;
-
       text-transform: uppercase;
-
     }
   }
 

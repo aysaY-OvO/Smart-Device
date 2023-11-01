@@ -1,0 +1,109 @@
+.form-wrapper {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 580px;
+  padding: 0;
+
+  @include vp-1919 {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @include vp-769 {
+    width: 270px;
+  }
+}
+
+.form-wrapper__title,
+.form-wrapper__subtitle {
+  color: $color-additional-white;
+  display: block;
+  width: 100%;
+}
+
+.form-wrapper__title {
+  margin-bottom: 15px;
+
+  @include vp-1919 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-769 {
+    font-size: 30px;
+    line-height: 42.18px;
+    margin-bottom: 0;
+  }
+}
+
+.form-wrapper__subtitle {
+  margin-bottom: 35px;
+
+  @include vp-1919 {
+    margin-bottom: 20px;
+  }
+
+  @include vp-769 {
+    width: 205px;
+    font-size: 14px;
+  }
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  background-color: rgba($color: #041427, $alpha: 0.15);
+  border: none;
+  border-radius: 3px;
+  color: $color-default-dark;
+}
+
+.form-wrapper input::-moz-placeholder,
+.form-wrapper textarea::-moz-placeholder {
+  color: $color-additional-white;
+}
+
+.form-wrapper input::-webkit-input-placeholder,
+.form-wrapper textarea::-webkit-input-placeholder {
+  color: $color-additional-white;
+}
+
+.form-wrapper input[name="name"],
+.form-wrapper input[name="phone"] {
+  width: 275px;
+  height: 50px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 15px 15px;
+
+  @include vp-1919 {
+    width: 320px;
+  }
+
+  @include vp-769 {
+    width: 270px;
+  }
+}
+
+.form-wrapper input[name="name"] {
+  margin-right: 30px;
+
+  @include vp-769 {
+    margin-right: 0;
+  }
+}
+
+.form-wrapper textarea {
+  width: 580px;
+  height: 155px;
+  box-sizing: border-box;
+  padding: 25px 15px;
+
+  @include vp-1919 {
+    width: 670px;
+  }
+
+  @include vp-769 {
+    width: 270px;
+    height: 180px;
+  }
+}
