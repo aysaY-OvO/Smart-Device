@@ -123,14 +123,14 @@
   margin-right: 0;
 }
 
-.modal__fieldset .phone-mask {
+.modal__form .phone-mask {
   width: 100%;
 }
 
-.modal__fieldset .feedback__submit-button {
+.modal__form-submit .form-submit__button {
   width: 100%;
   margin-right: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .modal__checkbox {
@@ -180,10 +180,4 @@
   height: 10px;
   bottom: 28%;
   left: 0.7%;
-}
-
-.modal__form-submit .form-submit__button {
-  width: 100%;
-  margin-right: 0;
-  margin-bottom: 20px;
 }
