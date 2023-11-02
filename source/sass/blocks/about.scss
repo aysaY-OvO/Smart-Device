@@ -14,7 +14,7 @@
 
   @include vp-769 {
     width: 270px;
-    margin: 0;
+    margin: 0 auto;
     padding-right: 25px;
     padding-left: 25px;
     margin-top: 50px;
@@ -29,9 +29,13 @@
   @include vp-1919 {
     left: 46px;
   }
+
+  @include vp-769 {
+    display: none;
+  }
 }
 
-.about__title {
+.about__content-wrapper h2 {
   margin: 0;
   margin-bottom: 15px;
 
@@ -41,7 +45,7 @@
   }
 }
 
-.about__text {
+.about__content-wrapper p {
   margin-top: 0;
 
   &:not(:last-of-type) {
@@ -50,9 +54,11 @@
 
   @include vp-769 {
     font-size: 14px;
+
     &:not(:last-of-type) {
       margin-bottom: 10px;
     }
+
     .mobile-width-hidden {
       display: none;
     }
@@ -89,11 +95,5 @@
 
   @include vp-769 {
     width: 160px;
-  }
-}
-
-.about__image {
-  @include vp-769 {
-    display: none;
   }
 }

@@ -1,4 +1,4 @@
-.products__item {
+.products__list li {
   position: relative;
 
   @include hover {
@@ -16,7 +16,7 @@
   }
 }
 
-.products__item-title {
+.products__list h3 {
   margin: 0;
   margin-top: 50px;
   margin-left: 40px;

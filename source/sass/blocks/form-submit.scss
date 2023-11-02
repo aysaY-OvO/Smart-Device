@@ -1,0 +1,89 @@
+.form-submit {
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  @include vp-1919 {
+    justify-content: center;
+    padding-right: 100px;
+  }
+
+  @include vp-769 {
+    padding-right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-submit__button {
+  width: 265px;
+  height: 45px;
+  background-color: $color-form-submit-button;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-right: 50px;
+
+  @include vp-1919 {
+    margin-right: 85px;
+  }
+
+  @include vp-769 {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.form-submit__checkbox {
+  position: relative;
+}
+
+.form-submit__checkbox input {
+  top: 60%;
+  left: 4%;
+}
+
+.form-submit__checkbox label {
+  color: $color-additional-white;
+  font-size: 14px;
+  display: block;
+  padding-left: 26px;
+  cursor: pointer;
+  line-height: 15px;
+
+  @include hover {
+    color: $color-form-submit-button;
+  }
+}
+
+.form-submit__checkbox label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px $color-additional-white inset;
+  left: 0;
+  top: 25%;
+}
+
+.form-submit__checkbox label:hover::after {
+  box-shadow: 0 0 0 1px $color-form-submit-button inset;
+}
+
+.form-submit__checkbox input:checked + label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite/checked.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  bottom: 30%;
+  left: 1.4%;
+}

@@ -14,18 +14,22 @@
 }
 
 .contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.contacts__item {
+.contacts__list li {
   line-height: 18px;
+
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
 }
 
-.contacts__address {
+.contacts__list span {
   color: $color-white-opacity;
 }

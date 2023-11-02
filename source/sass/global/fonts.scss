@@ -1,31 +1,39 @@
 @font-face {
   font-display: swap;
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/pt-mono-v13-cyrillic_latin-regular.woff2') format('woff2');
+  src:
+    url("../fonts/pt-mono-v13-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-cyrillic-500.woff2') format('woff2');
+  src:
+    url("../fonts/roboto-v30-cyrillic-500.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2') format('woff2');
+  src:
+    url("../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2') format('woff2');
+  src:
+    url("../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }

@@ -5,15 +5,19 @@
 }
 
 .user-navigation__list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin: 0 auto;
   margin-right: 150px;
   margin-left: 150px;
   justify-self: center;
   padding-left: 20px;
+<<<<<<< HEAD
   width: 480px;
+=======
+  width: 479px;
+>>>>>>> fix-branch
 
   @include vp-1919 {
     margin-left: 0;
@@ -21,13 +25,9 @@
     padding-bottom: 11px;
     width: auto;
   }
-
-  @include vp-769 {
-
-  }
 }
 
-.user-navigation__item {
+.user-navigation__list li {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -72,29 +72,6 @@
 }
 
 .user-navigation__text {
-  @include vp-1919 {
-    display: none;
-  }
-}
-
-.user-navigation__button {
-  color: $color-default-white;
-  background-color: transparent;
-  border: 1px solid $color-default-white;
-  border-radius: 3px;
-  width: 160px;
-  height: 40px;
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 60px;
-
-  @include hover {
-    color: $color-default-blue;
-    border: 1px solid $color-default-blue;
-  }
-
   @include vp-1919 {
     display: none;
   }

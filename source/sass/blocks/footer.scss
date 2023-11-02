@@ -57,6 +57,7 @@
 
 .footer__logo-text {
   color: $color-default-white;
+
   @include vp-769 {
     display: flex;
     flex-direction: column;
@@ -94,14 +95,14 @@
   @include vp-769 {
     &::after,
     &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 1px;
-    background-color: $color-accordion-button;
-    right: 27px;
-    top: 26px;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 1px;
+      background-color: $color-accordion-button;
+      right: 27px;
+      top: 26px;
     }
 
     &::before {

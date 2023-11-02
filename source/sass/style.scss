@@ -13,7 +13,6 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
@@ -22,24 +21,26 @@
 @import "blocks/custom-input.scss";
 @import "blocks/custom-toggle.scss";
 @import "blocks/header.scss";
+@import "blocks/sitemap-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/user-navigation.scss";
 @import "blocks/footer.scss";
 @import "blocks/social-links.scss";
 @import "blocks/site-links.scss";
 @import "blocks/preview.scss";
-@import "blocks/main.scss";
+@import "blocks/page-main.scss";
 @import "blocks/contacts.scss";
 @import "blocks/accordion.scss";
 @import "blocks/data-accordion.scss";
 @import "blocks/title.scss";
-@import "blocks/advantage-card.scss";
+@import "blocks/advantages-card.scss";
 @import "blocks/advantages.scss";
 @import "blocks/about.scss";
 @import "blocks/products.scss";
 @import "blocks/products-card.scss";
 @import "blocks/feedback.scss";
-@import "blocks/feedback-form.scss";
+@import "blocks/form-wrapper.scss";
+@import "blocks/form-submit.scss";
 @import "blocks/modal.scss";
 // ---------------------------------
 
