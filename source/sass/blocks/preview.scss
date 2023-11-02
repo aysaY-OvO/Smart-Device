@@ -55,12 +55,15 @@
   }
 }
 
-.preview__content .preview__title {
+.preview__content h1 {
+  font-family: $ff-roboto-condensed;
   font-size: 80px;
-  letter-spacing: 5.6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
   margin-bottom: 40px;
+  line-height: 50px;
 
   @include vp-1919 {
     font-size: 64px;
@@ -72,7 +75,7 @@
   }
 }
 
-.preview__subtitle {
+.preview__content span {
   font-size: 22px;
   line-height: 34.1px;
   margin-bottom: 40px;

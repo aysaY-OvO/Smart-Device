@@ -15,14 +15,19 @@
   }
 }
 
-.form-wrapper__title,
-.form-wrapper__subtitle {
+.form-wrapper h4,
+.form-wrapper span {
   color: $color-additional-white;
   display: block;
   width: 100%;
 }
 
-.form-wrapper__title {
+.form-wrapper h4 {
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 50.4px;
+  font-weight: 400;
+  margin: 0;
   margin-bottom: 15px;
 
   @include vp-1919 {
@@ -36,7 +41,7 @@
   }
 }
 
-.form-wrapper__subtitle {
+.form-wrapper span {
   margin-bottom: 35px;
 
   @include vp-1919 {

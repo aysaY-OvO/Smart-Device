@@ -1,14 +1,11 @@
-.user-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
 .user-navigation__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  margin-top: 15px;
   margin-right: 150px;
   margin-left: 150px;
   justify-self: center;
@@ -16,6 +13,7 @@
   width: 479px;
 
   @include vp-1919 {
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 11px;
