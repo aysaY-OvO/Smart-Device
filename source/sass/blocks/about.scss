@@ -1,15 +1,15 @@
 .about__wrapper {
   width: 1220px;
   margin: 0 auto;
-  padding-left: 250px;
+  padding-left: 220px;
   margin-bottom: 100px;
   position: relative;
 
   @include vp-1919 {
     width: 674px;
-    padding-left: 225px;
+    padding-left: 157px;
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 90px;
   }
 
   @include vp-769 {
@@ -22,12 +22,25 @@
   }
 }
 
-.about__image {
+.about__year-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 0;
+  width: 320px;
+  height: 150px;
+  left: -100px;
+  top: 25%;
+  font-family: $ff-roboto-condensed;
+  font-size: 156.25px;
+  font-weight: 700;
+  background-image: url("../img/images/about-year-background.jpg");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(270deg);
 
   @include vp-1919 {
-    left: 46px;
+    left: -90px;
   }
 
   @include vp-769 {
