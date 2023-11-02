@@ -5,6 +5,7 @@ import {initAccordions, accordions} from './modules/accordion/init-accordion';
 import {initPhoneMask} from './utils/phone-mask';
 
 // ---------------------------------
+const headerLogotype = document.querySelector('[data-logotype="header-logotype"]');
 const previewButton = document.querySelector('[data-button="preview-button"]');
 const accordionParent = document.querySelector('.accordion');
 const aboutBlock = document.querySelector('.about');
@@ -18,6 +19,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   const tabletBreakpoint = window.matchMedia('(max-width: 769px)');
+
+  const onChangeHeaderLogotype = () => {
+    if (tabletBreakpoint.matches) {
+      headerLogotype.setAttribute('xlink:href', './img/sprite.svg#logotype-mobile');
+    } else {
+      headerLogotype.setAttribute('xlink:href', './img/sprite.svg#logotype-desktop');
+    }
+  };
 
   const onChangePreviewButton = () => {
     if (tabletBreakpoint.matches) {
@@ -77,6 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabletBreakpoint.addListener(accordionsBreakpointChecker);
     tabletBreakpoint.addListener(onChangeProductsTitle);
     tabletBreakpoint.addListener(onChangePreviewButton);
+    tabletBreakpoint.addListener(onChangeHeaderLogotype);
     initPhoneMask();
     aboutHiddenText.forEach((text) => {
       showText(aboutButton, text);

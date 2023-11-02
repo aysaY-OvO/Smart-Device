@@ -1,15 +1,6 @@
 .logo {
-  display: flex;
-  flex-wrap: wrap;
   width: 215px;
-
-  @include hover {
-    color: $color-default-blue;
-  }
-
-  @include hover-focus {
-    color: $color-default-blue;
-  }
+  user-select: none;
 
   @include vp-1919 {
     margin-right: 0;
@@ -21,34 +12,6 @@
   margin-right: 15px;
 
   @include vp-769 {
-    width: 35px;
-    height: 35px;
     margin-right: 0;
   }
-}
-
-.logo__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 10px;
-
-  @include vp-769 {
-    display: none;
-  }
-
-  @include vp-1919 {
-    padding-top: 10px;
-  }
-}
-
-.logo__title {
-  font-family: $ff-roboto-condensed;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.logo__subtitle {
-  font-family: $ff-roboto;
-  font-size: 12px;
 }

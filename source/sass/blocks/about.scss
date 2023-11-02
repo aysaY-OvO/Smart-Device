@@ -30,7 +30,7 @@
   width: 320px;
   height: 150px;
   left: -100px;
-  top: 25%;
+  top: 50px;
   font-family: $ff-roboto-condensed;
   font-size: 156.25px;
   font-weight: 700;
@@ -40,6 +40,7 @@
   transform: rotate(270deg);
 
   @include vp-1919 {
+    top: 80px;
     left: -90px;
   }
 

@@ -42,6 +42,7 @@
 
 .form-submit__checkbox {
   position: relative;
+  user-select: none;
 }
 
 .form-submit__checkbox input {

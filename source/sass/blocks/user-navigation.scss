@@ -1,4 +1,5 @@
 .user-navigation__list {
+  user-select: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -13,11 +14,16 @@
   width: 479px;
 
   @include vp-1919 {
+    max-width: 550px;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: 0;
     padding-bottom: 11px;
     width: auto;
+  }
+
+  @include vp-769 {
+    max-width: 200px;
   }
 }
 

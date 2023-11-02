@@ -8,6 +8,7 @@
   padding-right: 45px;
   padding-bottom: 35px;
   box-sizing: border-box;
+  overflow: auto;
 
   @include hover {
     background-color: $color-default-blue;
@@ -17,7 +18,7 @@
       fill: $color-default-white;
     }
 
-    h4 {
+    h3 {
       color: $color-default-white;
     }
   }
@@ -37,7 +38,7 @@
         fill: $color-default-white;
       }
 
-      h4 {
+      h3 {
         color: $color-default-white;
       }
     }
@@ -58,7 +59,7 @@
   fill: $color-default-blue;
 }
 
-.advantages__list h4 {
+.advantages__list h3 {
   margin: 0;
   color: $color-default-blue;
   font-family: $ff-roboto-condensed;

@@ -34,6 +34,7 @@
 }
 
 .footer__block {
+  user-select: none;
   display: flex;
   flex-wrap: wrap;
 
@@ -57,6 +58,10 @@
 
 .footer__logo-text {
   color: $color-default-white;
+
+  @include hover {
+    color: $color-default-blue;
+  }
 
   @include vp-769 {
     display: flex;
