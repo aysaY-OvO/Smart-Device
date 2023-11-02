@@ -1650,7 +1650,7 @@ button,
 
 .advantages__wrapper {
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 110px;
   width: 100%;
   padding-left: 350px;
   padding-right: 350px;
@@ -1699,16 +1699,16 @@ button,
 .about__wrapper {
   width: 1220px;
   margin: 0 auto;
-  padding-left: 250px;
+  padding-left: 220px;
   margin-bottom: 100px;
   position: relative;
 }
 @media (max-width: 1919px) {
   .about__wrapper {
     width: 674px;
-    padding-left: 225px;
+    padding-left: 157px;
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 90px;
   }
 }
 @media (max-width: 769px) {
@@ -1722,17 +1722,39 @@ button,
   }
 }
 
-.about__image {
+.about__year-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  left: 0;
+  width: 320px;
+  height: 150px;
+  left: -100px;
+  top: 25%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 156.25px;
+  font-weight: 700;
+  background-image: url("../img/images/about-year-background.jpg");
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 @media (max-width: 1919px) {
-  .about__image {
-    left: 46px;
+  .about__year-text {
+    left: -90px;
   }
 }
 @media (max-width: 769px) {
-  .about__image {
+  .about__year-text {
     display: none;
   }
 }
