@@ -1,10 +1,6 @@
 .preview__wrapper {
   background-color: $color-default-dark;
-<<<<<<< HEAD
-  background-image: url('../img/images/main-bg-desktop.jpg');
-=======
   background-image: url("../img/images/main-bg-desktop.jpg");
->>>>>>> fix-branch
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -15,44 +11,26 @@
   padding-right: 250px;
 
   @include retina {
-<<<<<<< HEAD
-    background-image: url('../img/images/main-bg-desktop@2x.jpg');
-=======
     background-image: url("../img/images/main-bg-desktop@2x.jpg");
->>>>>>> fix-branch
   }
 
   @include vp-1919 {
     height: 600px;
     padding-left: 50px;
-<<<<<<< HEAD
-    background-image: url('../img/images/main-bg-tablet.jpg');
-
-    @include retina {
-      background-image: url('../img/images/main-bg-tablet@2x.jpg');
-=======
     background-image: url("../img/images/main-bg-tablet.jpg");
 
     @include retina {
       background-image: url("../img/images/main-bg-tablet@2x.jpg");
->>>>>>> fix-branch
     }
   }
 
   @include vp-769 {
     height: 520px;
     padding-left: 25px;
-<<<<<<< HEAD
-    background-image: url('../img/images/main-bg-mobile.jpg');
-
-    @include retina {
-      background-image: url('../img/images/main-bg-mobile@2x.jpg');
-=======
     background-image: url("../img/images/main-bg-mobile.jpg");
 
     @include retina {
       background-image: url("../img/images/main-bg-mobile@2x.jpg");
->>>>>>> fix-branch
     }
   }
 }

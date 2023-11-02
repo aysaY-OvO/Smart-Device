@@ -101,11 +101,7 @@
   }
 }
 
-<<<<<<< HEAD
-.modal__fieldset {
-=======
 .modal__form {
->>>>>>> fix-branch
   width: 100%;
 }
 
@@ -117,15 +113,6 @@
   color: $color-default-dark;
 }
 
-<<<<<<< HEAD
-.modal__fieldset input[name="имя"],
-.modal__fieldset input[name="телефон"],
-.modal__fieldset textarea {
-  width: 100%;
-}
-
-.modal__fieldset input[name="имя"] {
-=======
 .modal__form input[name="name"],
 .modal__form input[name="phone"],
 .modal__form textarea {
@@ -133,7 +120,6 @@
 }
 
 .modal__form input[name="name"] {
->>>>>>> fix-branch
   margin-right: 0;
 }
 
@@ -149,10 +135,6 @@
 
 .modal__checkbox {
   position: relative;
-<<<<<<< HEAD
-  display: block;
-=======
->>>>>>> fix-branch
   width: 395px;
   margin: 0 auto;
 }
@@ -200,11 +182,7 @@
   left: 0.7%;
 }
 
-<<<<<<< HEAD
-.modal__form-submit .feedback__submit-button {
-=======
 .modal__form-submit .form-submit__button {
->>>>>>> fix-branch
   width: 100%;
   margin-right: 0;
   margin-bottom: 20px;
