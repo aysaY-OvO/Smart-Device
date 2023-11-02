@@ -19,7 +19,10 @@
 }
 
 .social-links__list {
+  list-style-type: none;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-left: 10px;
 
   @include vp-1919 {
@@ -33,7 +36,7 @@
   }
 }
 
-.social-links__item {
+.social-links__list li {
   &:not(:last-of-type) {
     margin-right: 20px;
   }

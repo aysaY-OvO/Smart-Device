@@ -5,6 +5,7 @@
 }
 
 .user-navigation__list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -22,7 +23,7 @@
   }
 }
 
-.user-navigation__item {
+.user-navigation__list li {
   display: flex;
   flex-wrap: wrap;
   align-content: center;

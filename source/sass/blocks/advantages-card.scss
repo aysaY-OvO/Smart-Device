@@ -1,4 +1,4 @@
-.advantages__item {
+.advantages__list li {
   width: 595px;
   height: 300px;
   border: 1px solid $color-advantages-border;
@@ -17,7 +17,7 @@
       fill: $color-default-white;
     }
 
-    .advantages__title {
+    h4 {
       color: $color-default-white;
     }
   }
@@ -37,7 +37,7 @@
         fill: $color-default-white;
       }
 
-      .advantages__title {
+      h4 {
         color: $color-default-white;
       }
     }
@@ -58,7 +58,7 @@
   fill: $color-default-blue;
 }
 
-.advantages__title {
+.advantages__list h4 {
   margin: 0;
   color: $color-default-blue;
   font-family: $ff-roboto-condensed;
@@ -73,6 +73,6 @@
   }
 }
 
-.advantages__text {
+.advantages__list p {
   margin: 0;
 }
