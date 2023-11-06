@@ -1266,7 +1266,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 450px;
+  max-width: 400px;
 }
 @media (max-width: 767px) {
   .site-links {
@@ -1551,7 +1551,6 @@ button,
 }
 @media (max-width: 1023px) {
   .accordion {
-    width: 700px;
     padding-left: 20px;
     padding-top: 5px;
     padding-right: 0;
