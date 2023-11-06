@@ -1,6 +1,6 @@
 .site-links {
   flex-direction: column;
-  max-width: 450px;
+  max-width: 400px;
 
   @include vp-767 {
     max-width: 100%;
