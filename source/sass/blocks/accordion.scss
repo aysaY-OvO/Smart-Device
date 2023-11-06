@@ -1,10 +1,28 @@
 .accordion {
   margin: 0;
   display: flex;
+  width: 855px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-right: 30px;
 
-  @include vp-769 {
+  @media screen and (max-width: 1110px) {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  @include vp-1023 {
+    width: 700px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    width: auto;
     flex-direction: column;
+    padding-left: 0;
+    padding-top: 0;
   }
 
   & & {
@@ -20,7 +38,7 @@
     margin-bottom: 34px;
     padding: 10px;
 
-    @include vp-769 {
+    @include vp-767 {
       padding: 0;
       margin: 0;
     }
@@ -38,7 +56,8 @@
     cursor: default;
     box-sizing: border-box;
 
-    @include vp-769 {
+    @include vp-767 {
+      cursor: pointer;
       width: 100%;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -47,7 +66,7 @@
   }
 
   &__wrapper {
-    @include vp-769 {
+    @include vp-767 {
       padding-left: 25px;
       padding-bottom: 20px;
     }

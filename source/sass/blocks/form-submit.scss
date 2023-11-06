@@ -1,18 +1,21 @@
 .form-submit {
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  padding-left: 15px;
 
-  @include vp-1919 {
-    justify-content: center;
-    padding-right: 100px;
+  @include vp-1023 {
+    width: 670px;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-top: 35px;
   }
 
-  @include vp-769 {
-    padding-right: 0;
+  @include vp-767 {
     width: 100%;
+    margin-top: 30px;
     flex-direction: column;
     align-items: center;
   }
@@ -30,19 +33,26 @@
   letter-spacing: 0.8px;
   margin-right: 50px;
 
-  @include vp-1919 {
+  @include vp-1023 {
     margin-right: 85px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
 
 .form-submit__checkbox {
   position: relative;
   user-select: none;
+  align-self: flex-start;
+  margin-top: 22px;
+
+  @include vp-1023 {
+    margin-top: 10px;
+  }
 }
 
 .form-submit__checkbox input {
@@ -61,6 +71,10 @@
   @include hover {
     color: $color-form-submit-button;
   }
+
+  @include vp-767 {
+    padding-left: 30px;
+  }
 }
 
 .form-submit__checkbox label::after {
@@ -71,7 +85,11 @@
   border-radius: 2px;
   box-shadow: 0 0 0 1px $color-additional-white inset;
   left: 0;
-  top: 25%;
+  top: 5px;
+
+  @include vp-767 {
+    left: 2%;
+  }
 }
 
 .form-submit__checkbox label:hover::after {
@@ -85,6 +103,6 @@
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
-  bottom: 30%;
+  bottom: 34%;
   left: 1.4%;
 }

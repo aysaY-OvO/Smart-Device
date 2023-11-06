@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -56,8 +56,8 @@
     background-color: $color-default-blue;
     fill: $color-default-white;
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 17px;
     z-index: 1;
 
     width: 40px;
@@ -93,16 +93,26 @@
   background: none;
   background-color: $color-default-blue;
   width: 500px;
-  padding: 40px;
-
-  @include vp-769 {
-    width: 100%;
-    padding: 20px;
-  }
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  border-radius: 3px;
 }
 
 .modal__form {
-  width: 100%;
+  padding-left: 0;
+  width: 420px;
+}
+
+.modal__form h4 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.modal__form span {
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .modal__form input,
@@ -119,12 +129,21 @@
   width: 100%;
 }
 
+.modal__form textarea {
+  min-width: 420px;
+}
+
 .modal__form input[name="name"] {
   margin-right: 0;
 }
 
 .modal__form .phone-mask {
   width: 100%;
+}
+
+.modal__form-submit {
+  margin-top: 25px;
+  padding-left: 0;
 }
 
 .modal__form-submit .form-submit__button {
@@ -178,6 +197,6 @@
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
-  bottom: 28%;
-  left: 0.7%;
+  bottom: 10%;
+  left: 0.9%;
 }

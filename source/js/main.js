@@ -13,12 +13,13 @@ const aboutHiddenText = aboutBlock.querySelectorAll('.is-hidden');
 const aboutButton = aboutBlock.querySelector('.about__button');
 const mobileWidthOnlyHidden = aboutBlock.querySelector('.mobile-width-hidden');
 const productsTitle = document.querySelector('[data-title="products-title"]');
+const accordionButtons = document.querySelectorAll('[data-accordion="button"]');
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-  const tabletBreakpoint = window.matchMedia('(max-width: 769px)');
+  const tabletBreakpoint = window.matchMedia('(max-width: 767px)');
 
   const onChangeHeaderLogotype = () => {
     if (tabletBreakpoint.matches) {
@@ -52,6 +53,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const removeTabIndex = () => {
+    accordionButtons.forEach((button) => {
+      if (tabletBreakpoint.matches) {
+        button.removeAttribute('tabIndex');
+      } else {
+        button.setAttribute('tabIndex', -1);
+      }
+    });
+  };
+
   const showText = (btn, content) => {
     btn.addEventListener('click', () => {
       if (content.classList.contains('is-hidden')) {
@@ -68,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const onChangeProductsTitle = () => {
     if (tabletBreakpoint.matches) {
-      productsTitle.textContent = 'Товары и услуги Smart Device';
+      productsTitle.innerHTML = 'Товары и&nbsp;услуги <br> Smart Device';
     } else {
       productsTitle.textContent = 'Smart Device предлагает следующие товары и услуги';
     }
@@ -87,6 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabletBreakpoint.addListener(onChangeProductsTitle);
     tabletBreakpoint.addListener(onChangePreviewButton);
     tabletBreakpoint.addListener(onChangeHeaderLogotype);
+    tabletBreakpoint.addListener(removeTabIndex);
     initPhoneMask();
     aboutHiddenText.forEach((text) => {
       showText(aboutButton, text);

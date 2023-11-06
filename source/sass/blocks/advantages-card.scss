@@ -1,11 +1,10 @@
 .advantages__list li {
-  width: 595px;
   height: 300px;
   border: 1px solid $color-advantages-border;
   box-shadow: 5px 0 0 0 $color-default-blue inset;
   padding-top: 40px;
   padding-left: 45px;
-  padding-right: 45px;
+  padding-right: 25px;
   padding-bottom: 35px;
   box-sizing: border-box;
   overflow: auto;
@@ -23,12 +22,12 @@
     }
   }
 
-  @include vp-1919 {
-    width: 320px;
-    height: 360px;
+  @include vp-1023 {
+    height: 370px;
     padding-right: 30px;
     padding-left: 45px;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 35px;
 
     @include hover-focus {
       background-color: $color-default-blue;
@@ -44,13 +43,16 @@
     }
   }
 
-  @include vp-769 {
-    width: 270px;
-    min-height: 325px;
-    padding-left: 10px;
+  @include vp-767 {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    min-width: 270px;
+    max-height: 340px;
+    padding-left: 30px;
     padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 35px;
     font-size: 14px;
   }
 }
@@ -65,10 +67,11 @@
   font-family: $ff-roboto-condensed;
   font-size: 24px;
   line-height: 33.6px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 
-  @include vp-769 {
+  @include vp-767 {
+    margin-bottom: 5px;
     font-size: 20px;
     line-height: 33px;
   }

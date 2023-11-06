@@ -1,13 +1,21 @@
-.footer__wrapper {
+.footer {
   background-color: $color-default-dark;
+}
+
+.footer__wrapper {
+  max-width: 1260px;
   color: $color-default-white;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 350px 55px 350px;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
   min-height: 280px;
   box-sizing: border-box;
-  justify-content: center;
 
   a {
     color: $color-white-opacity;
@@ -21,13 +29,13 @@
     }
   }
 
-  @include vp-1919 {
+  @include vp-1023 {
     max-height: none;
-    padding: 50px 45px 65px 50px;
+    padding-top: 50px;
   }
 
-  @include vp-769 {
-    padding: 35px 0;
+  @include vp-767 {
+    padding: 13px 0;
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -38,66 +46,57 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include vp-769 {
+  @include vp-767 {
     border-bottom: 1px solid $color-accordion-border;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 
 .footer__logo {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
-  @include vp-769 {
+  @include vp-1023 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
-.footer__logo-text {
-  color: $color-default-white;
-
-  @include hover {
-    color: $color-default-blue;
-  }
-
-  @include vp-769 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 15px;
-  }
-}
-
-.footer__title {
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 27px;
+.footer__button {
+  padding: 0;
+  margin-top: 9px;
+  margin-bottom: 23px;
   font-family: $ff-roboto-condensed;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-
-  @include vp-769 {
-    margin: 0;
-    margin-left: 25px;
-  }
-}
-
-.footer__button {
   display: flex;
   background-color: transparent;
   border: none;
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  padding: 0;
 
-  @include vp-769 {
+  @include vp-1023 {
+    font-size: 15px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding-left: 25px;
+
     &::after,
     &::before {
       content: "";

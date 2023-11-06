@@ -2,28 +2,23 @@
   user-select: none;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-left: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin-top: 15px;
-  margin-right: 150px;
-  margin-left: 150px;
   justify-self: center;
-  padding-left: 20px;
-  width: 479px;
+  max-width: 479px;
 
-  @include vp-1919 {
-    max-width: 550px;
-    margin-top: 0;
-    margin-left: 20px;
-    margin-right: 0;
-    padding-bottom: 11px;
-    width: auto;
+  @include vp-1023 {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-bottom: 20px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     max-width: 200px;
+    padding-bottom: 0;
   }
 }
 
@@ -36,7 +31,7 @@
     margin-right: 120px;
   }
 
-  @include vp-1919 {
+  @include vp-1023 {
     &:not(:last-of-type) {
       margin-right: 20px;
     }
@@ -57,7 +52,7 @@
     color: $color-default-blue;
   }
 
-  @include vp-1919 {
+  @include vp-1023 {
     padding: 10px;
     justify-content: center;
 
@@ -72,7 +67,7 @@
 }
 
 .user-navigation__text {
-  @include vp-1919 {
+  @include vp-1023 {
     display: none;
   }
 }

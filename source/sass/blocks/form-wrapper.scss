@@ -2,16 +2,11 @@
   border: none;
   display: flex;
   flex-wrap: wrap;
-  width: 580px;
-  padding: 0;
+  padding-left: 15px;
 
-  @include vp-1919 {
-    width: 670px;
+  @include vp-1023 {
     margin: 0 auto;
-  }
-
-  @include vp-769 {
-    width: 270px;
+    padding-left: 0;
   }
 }
 
@@ -25,32 +20,33 @@
 .form-wrapper h4 {
   font-family: $ff-roboto-condensed;
   font-size: 36px;
-  line-height: 50.4px;
+  line-height: 1.2;
   font-weight: 400;
   margin: 0;
   margin-bottom: 15px;
 
-  @include vp-1919 {
-    margin-bottom: 5px;
+  @include vp-1023 {
+    margin-bottom: 10px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     font-size: 30px;
-    line-height: 42.18px;
-    margin-bottom: 0;
+    line-height: 1.4;
+    margin-bottom: 8px;
   }
 }
 
 .form-wrapper span {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
-  @include vp-1919 {
-    margin-bottom: 20px;
+  @include vp-1023 {
+    margin-bottom: 28px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     width: 205px;
     font-size: 14px;
+    margin-bottom: 34px;
   }
 }
 
@@ -74,41 +70,43 @@
 
 .form-wrapper input[name="name"],
 .form-wrapper input[name="phone"] {
+  min-width: 270px;
   width: 275px;
   height: 50px;
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 15px 15px;
 
-  @include vp-1919 {
+  @include vp-1023 {
     width: 320px;
   }
 
-  @include vp-769 {
-    width: 270px;
+  @include vp-767 {
+    width: 100%;
   }
 }
 
 .form-wrapper input[name="name"] {
   margin-right: 30px;
 
-  @include vp-769 {
+  @include vp-767 {
     margin-right: 0;
   }
 }
 
 .form-wrapper textarea {
-  width: 580px;
+  min-width: 580px;
   height: 155px;
   box-sizing: border-box;
   padding: 25px 15px;
 
-  @include vp-1919 {
-    width: 670px;
+  @include vp-1023 {
+    min-width: 670px;
+    padding-top: 30px;
   }
 
-  @include vp-769 {
-    width: 270px;
+  @include vp-767 {
+    min-width: 270px;
     height: 180px;
   }
 }

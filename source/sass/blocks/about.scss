@@ -1,23 +1,24 @@
 .about__wrapper {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding-left: 220px;
-  margin-bottom: 100px;
+  padding-left: 250px;
+  padding-right: 20px;
+  margin-bottom: 120px;
   position: relative;
 
-  @include vp-1919 {
-    width: 674px;
-    padding-left: 157px;
+  @include vp-1023 {
+    min-width: 674px;
+    padding-left: 225px;
     margin-bottom: 80px;
-    margin-top: 90px;
   }
 
-  @include vp-769 {
-    width: 270px;
+  @include vp-767 {
+    min-width: 270px;
     margin: 0 auto;
     padding-right: 25px;
     padding-left: 25px;
-    margin-top: 50px;
+    padding-top: 5px;
+    margin-top: 0;
     margin-bottom: 80px;
   }
 }
@@ -29,8 +30,8 @@
   position: absolute;
   width: 320px;
   height: 150px;
-  left: -100px;
-  top: 50px;
+  left: -70px;
+  top: 80px;
   font-family: $ff-roboto-condensed;
   font-size: 156.25px;
   font-weight: 700;
@@ -39,23 +40,26 @@
   -webkit-text-fill-color: transparent;
   transform: rotate(270deg);
 
-  @include vp-1919 {
-    top: 80px;
-    left: -90px;
+  @include vp-1023 {
+    top: 85px;
+    left: -22px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     display: none;
   }
 }
 
 .about__content-wrapper h2 {
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 1.1;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
-  @include vp-769 {
+  @include vp-767 {
     font-size: 28px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 
@@ -63,14 +67,14 @@
   margin-top: 0;
 
   &:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     font-size: 14px;
 
     &:not(:last-of-type) {
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     .mobile-width-hidden {
@@ -80,6 +84,7 @@
 }
 
 .about__button {
+  box-sizing: border-box;
   margin-top: 42px;
   width: 180px;
   height: 45px;
@@ -103,11 +108,13 @@
     color: $color-default-white;
   }
 
-  @include vp-1919 {
+  @include vp-1023 {
     margin-top: 20px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
+    margin-top: -10px;
     width: 160px;
+    height: 35px;
   }
 }

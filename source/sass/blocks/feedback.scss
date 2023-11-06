@@ -1,15 +1,20 @@
-.feedback__wrapper {
-  background: linear-gradient(139deg, $color-default-dark-opacity 34%, $color-default-blue 34% 100%);
+.feedback {
+  background: linear-gradient(139deg, $color-default-dark-opacity 33%, $color-default-blue 34% 100%);
   background-color: $color-default-blue;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 115px;
-  padding-top: 170px;
-  padding-right: 350px;
-  padding-left: 350px;
-  padding-bottom: 250px;
+}
 
-  @include vp-1919 {
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 170px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 250px;
+  box-sizing: border-box;
+  max-width: 1250px;
+
+  @include vp-1023 {
     background: none;
     background-color: $color-default-blue;
     padding-top: 50px;
@@ -19,10 +24,23 @@
     display: block;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     padding-right: 25px;
     padding-left: 25px;
     padding-bottom: 90px;
+  }
+}
+
+.feedback__form-wrapper {
+  width: 600px;
+
+  @include vp-1023 {
+    width: 670px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -30,7 +48,7 @@
   justify-self: end;
   padding-top: 70px;
 
-  @include vp-1919 {
+  @include vp-1023 {
     display: none;
   }
 }
