@@ -22,22 +22,20 @@
 }
 
 .products__wrapper h2 {
+  max-width: 1220px;
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 1.6;
   font-weight: 400;
   display: block;
-  max-width: 1220px;
   margin: 0 auto;
   margin-bottom: 50px;
 
   @include vp-1023 {
-    width: 670px;
     margin-bottom: 30px;
   }
 
   @include vp-767 {
-    width: 270px;
     line-height: 1.4;
     font-size: 28px;
     margin-bottom: 30px;
@@ -51,14 +49,10 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 85px;
+  gap: 85px;
 
   @include vp-1023 {
-    display: block;
-    width: 670px;
-  }
-
-  @include vp-767 {
-    width: 270px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
