@@ -6,7 +6,7 @@
     min-width: 768px;
     padding-left: 30px;
     padding-right: 57px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -14,6 +14,7 @@
   @include vp-767 {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 0;
     min-width: 100%;
     flex-direction: column;
   }

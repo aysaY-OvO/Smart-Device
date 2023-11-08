@@ -9,7 +9,7 @@
   @include vp-1023 {
     min-width: 674px;
     padding-left: 225px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   @include vp-767 {
@@ -85,16 +85,16 @@
 
 .about__button {
   box-sizing: border-box;
-  margin-top: 42px;
-  width: 180px;
-  height: 45px;
+  margin-top: 15px;
+  max-width: 180px;
+  min-height: 45px;
+  padding: 15px 50px;
   border: 1px solid $color-default-blue;
   border-radius: 3px;
   background-color: transparent;
   color: $color-default-blue;
   font-size: 14px;
   text-transform: uppercase;
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -109,12 +109,12 @@
   }
 
   @include vp-1023 {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   @include vp-767 {
     margin-top: -10px;
-    width: 160px;
-    height: 35px;
+    min-height: 35px;
+    padding: 0 40px;
   }
 }

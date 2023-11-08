@@ -12,7 +12,6 @@
   }
 
   @include vp-1023 {
-    // width: 700px;
     padding-left: 20px;
     padding-top: 5px;
     padding-right: 0;
@@ -53,6 +52,7 @@
   }
 
   &__button {
+    font-size: 15px;
     cursor: default;
     box-sizing: border-box;
 

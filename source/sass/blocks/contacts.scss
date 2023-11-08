@@ -4,7 +4,7 @@
   position: relative;
 
   @include vp-1023 {
-    margin-left: 95px;
+    margin-left: 110px;
   }
 
   @include vp-767 {
@@ -19,10 +19,15 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 310px;
+
+  @include vp-1023 {
+    max-width: 320px;
+  }
 }
 
 .contacts__list li {
-  line-height: 1.1;
+  line-height: 1.3;
 
   &:not(:last-of-type) {
     margin-bottom: 10px;
