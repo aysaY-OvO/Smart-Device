@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (tabletBreakpoint.matches) {
       productsTitle.innerHTML = 'Товары и&nbsp;услуги <br> Smart Device';
     } else {
-      productsTitle.textContent = 'Smart Device предлагает следующие товары и услуги';
+      productsTitle.innerHTML = 'Smart Device предлагает следующие товары и&nbsp;услуги';
     }
   };
 
