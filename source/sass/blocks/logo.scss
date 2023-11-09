@@ -6,10 +6,10 @@
     margin-right: 0;
     width: auto;
   }
-}
 
-.logo__icon {
   @include vp-767 {
-    margin-right: 0;
+    img {
+      margin-right: 0;
+    }
   }
 }

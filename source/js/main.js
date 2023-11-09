@@ -5,14 +5,11 @@ import {initAccordions, accordions} from './modules/accordion/init-accordion';
 import {initPhoneMask} from './utils/phone-mask';
 
 // ---------------------------------
-const headerLogotype = document.querySelector('[data-logotype="header-logotype"]');
-const previewButton = document.querySelector('[data-button="preview-button"]');
 const accordionParent = document.querySelector('.accordion');
 const aboutBlock = document.querySelector('.about');
 const aboutHiddenText = aboutBlock.querySelectorAll('.is-hidden');
 const aboutButton = aboutBlock.querySelector('.about__button');
 const mobileWidthOnlyHidden = aboutBlock.querySelector('.mobile-width-hidden');
-const productsTitle = document.querySelector('[data-title="products-title"]');
 const accordionButtons = document.querySelectorAll('[data-accordion="button"]');
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,22 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   const tabletBreakpoint = window.matchMedia('(max-width: 767px)');
-
-  const onChangeHeaderLogotype = () => {
-    if (tabletBreakpoint.matches) {
-      headerLogotype.setAttribute('xlink:href', './img/sprite.svg#logotype-mobile');
-    } else {
-      headerLogotype.setAttribute('xlink:href', './img/sprite.svg#logotype-desktop');
-    }
-  };
-
-  const onChangePreviewButton = () => {
-    if (tabletBreakpoint.matches) {
-      previewButton.textContent = 'бесплатная консультация';
-    } else {
-      previewButton.textContent = 'Получить бесплатную консультацию';
-    }
-  };
 
   const accordionsBreakpointChecker = () => {
     if (tabletBreakpoint.matches) {
@@ -77,14 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  const onChangeProductsTitle = () => {
-    if (tabletBreakpoint.matches) {
-      productsTitle.innerHTML = 'Товары и&nbsp;услуги <br> Smart Device';
-    } else {
-      productsTitle.innerHTML = 'Smart Device предлагает следующие товары и&nbsp;услуги';
-    }
-  };
-
   iosVhFix();
 
   // Modules
@@ -95,9 +68,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     tabletBreakpoint.addListener(showTabletText);
     tabletBreakpoint.addListener(accordionsBreakpointChecker);
-    tabletBreakpoint.addListener(onChangeProductsTitle);
-    tabletBreakpoint.addListener(onChangePreviewButton);
-    tabletBreakpoint.addListener(onChangeHeaderLogotype);
     tabletBreakpoint.addListener(removeTabIndex);
     initPhoneMask();
     aboutHiddenText.forEach((text) => {

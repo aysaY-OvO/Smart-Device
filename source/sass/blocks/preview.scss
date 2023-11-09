@@ -124,6 +124,10 @@
   justify-content: center;
   align-items: center;
 
+  &::before {
+    content: attr(data-preview-tablet-text);
+  }
+
   @include vp-1023 {
     margin-left: 45px;
   }
@@ -135,5 +139,9 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &::before {
+      content: attr(data-preview-mobile-text);
+    }
   }
 }
